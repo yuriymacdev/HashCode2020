@@ -49,8 +49,9 @@ std::vector<long long> getElementsFromString(const std::string& str, int lineNo)
 }
 
 int main(int argc, const char * argv[]) {
+    
     const string problemFilename = "e_also_big";
-    input = loadFileIntoString("/Users/george/Desktop/TestPizzaHashcode/"+problemFilename+".in");
+    input = loadFileIntoString("/Users/george/Desktop/HashCode2020/TestPizzaHashcode/"+problemFilename+".in");
     
     // parsing that shit
     vector<long long> firstLine = getElementsFromString(input, 0);
@@ -87,9 +88,9 @@ int main(int argc, const char * argv[]) {
     
     output = outss.str();
     
-    saveStringToFile(output, "/Users/george/Desktop/TestPizzaHashcode/"+problemFilename+".out");
+    saveStringToFile(output, "/Users/george/Desktop/HashCode2020/TestPizzaHashcode/"+problemFilename+".out");
     
-    //cout << output;
+    cout << output;
         
     return 0;
 }
